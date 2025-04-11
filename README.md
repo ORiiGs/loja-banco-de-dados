@@ -23,3 +23,12 @@ docker exec -it loja-banco-de-dados mongosh -u admin -p admin123
 -MONGODB_LOJA_DATABASE (nome do BD), Valor padrão: "loja"
 -MONGODB_APP_USER (usuário de teste), Valor padrão: "usertest"
 -MONGODB_APP_PASSWORD (senha do usuário de teste), Valor padrão: "senhateste"
+
+# link para dockerhub
+
+https://hub.docker.com/repository/docker/riigs/loja-banco-de-dados/general
+
+# docker multi stage
+
+É utilizado uma imagem alpine para manipular scripts, então é copiado o init-mongo.js para dentro do container
+Depois mantemos a imagem original do MOngoDB copiando apenas o script processado anteriormente
