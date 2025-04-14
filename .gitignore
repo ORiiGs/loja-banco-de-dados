@@ -1,11 +1,5 @@
-# Arquivos de IDE/Editor
-.vscode/
-.idea/
-
-# Logs e arquivos temporários
 *.log
 *.tmp
-
-# Arquivos de ambiente
+.vscode/
 .env
 *.env.local

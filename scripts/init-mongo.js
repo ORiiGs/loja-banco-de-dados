@@ -1,16 +1,9 @@
 const DB_NAME = process.env.MONGODB_LOJA_DATABASE;
-const APP_USER = process.env.MONGODB_APP_USER;
-const APP_PASS = process.env.MONGODB_APP_PASSWORD;
 
-db = db.getSiblingDB('loja');
-
-db.createUser({
-  user: 'userteste',
-  pwd: 'senhateste',
-  roles: [{ role: 'readWrite', db: 'loja' }]
-});
+db = db.getSiblingDB('tarefas');
 
 db.produtos.insertMany([
-  { nome: "Camisa", preco: 80.00 },
-  { nome: "Calça", preco: 120.00 }
+  { nome: "Tarefa 1", Qt_Questoes: 12, dificuldade: "3/5" },
+  { nome: "Tarefa 2", Qt_Questoes: 7, dificuldade: "2/5" },
+  { nome: "Tarefa 3", Qt_Questoes: 18, dificuldade: "5/5" },
 ]);
