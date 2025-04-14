@@ -14,7 +14,6 @@ docker exec -it tarefas-bd mongosh -u admin -p admin123
 
 ## configuráveis
 
-<<<<<<< HEAD
 -MONGODB_PORT (porta que irá rodar o BD), Valor padrão: "27017"
 -MONGODB_LOJA_DATABASE (nome do BD), Valor padrão: "loja"
 -MONGODB_APP_USER (usuário de teste), Valor padrão: "usertest"
@@ -28,11 +27,3 @@ https://hub.docker.com/repository/docker/riigs/loja-banco-de-dados/general
 
 É utilizado uma imagem alpine para manipular scripts, então é copiado o init-mongo.js para dentro do container
 Depois mantemos a imagem original do MOngoDB copiando apenas o script processado anteriormente
-=======
--MONGODB_PORT (porta que irá rodar o BD), Valor padrão: "7000"
--MONGODB_LOJA_DATABASE (nome do BD), Valor padrão: "tarefas"
-
-# link para dockerhub
-
-MISSING
->>>>>>> 6de847e1e8b101da814820ce3d7a7d46dcfc2b02
